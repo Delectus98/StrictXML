@@ -18,11 +18,6 @@
 #include "TagDoc.h"
 #include "XmlText.h"
 
-#define _ATTRIBUT_XML_ '\"'
-#define _BACKSLASH_XML_ '\\'
-#define _SPACE_XML_ ' '
-#define _CHEVRON_OUVERT_XML_ '<'
-#define _CHEVRON_FERME_XML_ '>'
 
 class XmlDocument {
 private:
