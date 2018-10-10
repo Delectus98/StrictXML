@@ -1,7 +1,6 @@
 
 #include <stack>
 #include <iostream>
-#include <algorithm>
 #include "XmlDocument.h"
 
 int XmlDocument::loadFromFile(const std::string &filePath) {
