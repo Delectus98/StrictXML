@@ -17,8 +17,12 @@ public:
 
 class XmlWrongGetException : public XmlException {
 public:
+    /*explicit XmlWrongGetException(const Xml* xml, const std::string& funName){
+        xml->getType() 
+    }*/
+    
     virtual void print() const override {
-        std::cerr << "XmlWrongGetException" << std::endl;
+        std::cerr << "XmlWrongGetException : can't use " + funName + "" << std::endl;
     }
 };
 
