@@ -2,8 +2,8 @@
 // Created by Maxime on 15/05/2018.
 //
 
-#ifndef KEYBOARDKNOCKOUT_TAGREGULAR_H
-#define KEYBOARDKNOCKOUT_TAGREGULAR_H
+#ifndef TAGREGULAR_H
+#define TAGREGULAR_H
 
 #include <deque>
 #include <map>
@@ -63,4 +63,4 @@ public:
 };
 
 
-#endif //KEYBOARDKNOCKOUT_TAGREGULAR_H
+#endif //TAGREGULAR_H

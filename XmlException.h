@@ -2,35 +2,44 @@
 // Created by Maxime on 15/05/2018.
 //
 
-#ifndef KEYBOARDKNOCKOUT_XMLEXCEPTION_H
-#define KEYBOARDKNOCKOUT_XMLEXCEPTION_H
+#ifndef XMLEXCEPTION_H
+#define XMLEXCEPTION_H
 
 #include <exception>
 #include <iostream>
+#include "XmlType.h"
 
-class XmlException : public std::exception{
+class XmlException : public std::exception {
+protected:
+    const XmlType _type;
+    const std::string _error;
+protected:
+    XmlException(const XmlType type, const std::string& error) : _type(type), _error(error) {}
+
+    virtual ~XmlException() override {}
 public:
-    virtual void print() const{
-        std::cerr << "XmlException" << std::endl;
+    virtual const char* what() const noexcept {
+        return _error.c_str();
     }
+
+    virtual void print() const {
+        std::cout << what() << std::endl;
+    }
+};
+
+class XmlCreationException : public XmlException {
+public:
+    XmlCreationException(const XmlType type, const std::string& error) : XmlException(type, "Xml component creation error: "+error){}
 };
 
 class XmlWrongGetException : public XmlException {
 public:
-    /*explicit XmlWrongGetException(const Xml* xml, const std::string& funName){
-        xml->getType() 
-    }*/
-    
-    virtual void print() const override {
-        std::cerr << "XmlWrongGetException : can't use " + funName + "" << std::endl;
-    }
+    XmlWrongGetException(const XmlType type, const std::string& error) : XmlException(type, "Wrong tentative of getting value: " + error){}
 };
 
 class XmlWrongSetException : public XmlException {
 public:
-    virtual void print() const override {
-        std::cerr << "XmlWrongSetException" << std::endl;
-    }
+    XmlWrongSetException(const XmlType type, const std::string& error) : XmlException(type, "Wrong tentative of getting value: "  + error){}
 };
 
-#endif //KEYBOARDKNOCKOUT_XMLEXCEPTION_H
+#endif //XMLEXCEPTION_H

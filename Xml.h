@@ -1,6 +1,6 @@
 
-#ifndef KEYBOARDKNOCKOUT_XML_H
-#define KEYBOARDKNOCKOUT_XML_H
+#ifndef XML_H
+#define XML_H
 
 #include <string>
 #include <memory>
@@ -61,4 +61,4 @@ public:
 };
 
 
-#endif //KEYBOARDKNOCKOUT_XML_H
+#endif //XML_H

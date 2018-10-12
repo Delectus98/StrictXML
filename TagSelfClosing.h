@@ -2,8 +2,8 @@
 // Created by Maxime on 16/05/2018.
 //
 
-#ifndef KEYBOARDKNOCKOUT_TAGSELFCLOSING_H
-#define KEYBOARDKNOCKOUT_TAGSELFCLOSING_H
+#ifndef TAGSELFCLOSING_H
+#define TAGSELFCLOSING_H
 
 #include <map>
 #include "Xml.h"
@@ -59,4 +59,4 @@ public:
 };
 
 
-#endif //KEYBOARDKNOCKOUT_TAGSELFCLOSING_H
+#endif //TAGSELFCLOSING_H

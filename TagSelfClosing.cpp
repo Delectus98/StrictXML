@@ -19,19 +19,19 @@ void TagSelfClosing::setAttribute(const std::string &attr, const std::string &va
 }
 
 void TagSelfClosing::setText(const std::string &value) {
-    throw XmlWrongSetException();
+    throw XmlWrongSetException(TYPE, _name + " can't use 'setText");
 }
 
 void TagSelfClosing::addXml(std::unique_ptr<Xml> xml) {
-    throw XmlWrongSetException();
+    throw XmlWrongSetException(TYPE, _name + " can't use 'addXml");
 }
 
 void TagSelfClosing::removeXml(size_t index) {
-    throw XmlWrongSetException();
+    throw XmlWrongSetException(TYPE, _name + " can't use 'removeXml");
 }
 
 void TagSelfClosing::replaceXml(size_t index, std::unique_ptr<Xml> xml) {
-    throw XmlWrongSetException();
+    throw XmlWrongSetException(TYPE, _name + " can't use 'replaceXml");
 }
 
 const std::string &TagSelfClosing::getName() const{
@@ -48,19 +48,19 @@ const std::string &TagSelfClosing::getAttributeValueOrElse(const std::string &at
 }
 
 const std::string &TagSelfClosing::getText() const{
-    throw XmlWrongSetException();
+    throw XmlWrongGetException(TYPE, _name + " can't use 'getText");
 }
 
 size_t TagSelfClosing::getXmlCount() const{
-    throw XmlWrongGetException();
+    throw XmlWrongGetException(TYPE, _name + " can't use 'getXmlCount");
 }
 
 const Xml *TagSelfClosing::getXml(size_t index) const {
-    throw XmlWrongGetException();
+    throw XmlWrongGetException(TYPE, _name + " can't use 'getXml");
 }
 
 Xml *TagSelfClosing::getXml(size_t index) {
-    throw XmlWrongGetException();
+    throw XmlWrongGetException(TYPE, _name + " can't use 'getXml");
 }
 
 const XmlType &TagSelfClosing::getType() const {

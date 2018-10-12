@@ -2,8 +2,8 @@
 // Created by Maxime on 16/05/2018.
 //
 
-#ifndef KEYBOARDKNOCKOUT_TAGCLOSING_H
-#define KEYBOARDKNOCKOUT_TAGCLOSING_H
+#ifndef TAGCLOSING_H
+#define TAGCLOSING_H
 
 
 #include <map>
@@ -37,7 +37,7 @@ public:
     const std::string &getName() const override;
 
     bool isAttribute(const std::string& name) const override {
-        throw XmlException();
+        throw XmlWrongGetException(TYPE, _name + " can't use 'isAttribute");
     }
 
     const std::string &getAttributeValueOrElse(const std::string &attr, const std::string &other) const override;
@@ -59,4 +59,4 @@ public:
 };
 
 
-#endif //KEYBOARDKNOCKOUT_TAGCLOSING_H
+#endif //TAGCLOSING_H

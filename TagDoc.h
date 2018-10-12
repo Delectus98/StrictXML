@@ -2,8 +2,8 @@
 // Created by Maxime on 16/05/2018.
 //
 
-#ifndef KEYBOARDKNOCKOUT_TAGDOC_H
-#define KEYBOARDKNOCKOUT_TAGDOC_H
+#ifndef TAGDOC_H
+#define TAGDOC_H
 
 #include "Xml.h"
 #include "XmlException.h"
@@ -36,7 +36,7 @@ public:
     const std::string &getName() const override;
 
     bool isAttribute(const std::string& name) const override {
-        throw XmlException();
+        throw XmlWrongGetException(TYPE, _name + " can't use 'isAttribute");
     }
 
     const std::string &getAttributeValueOrElse(const std::string &attr, const std::string &other) const override;
@@ -57,4 +57,4 @@ public:
 };
 
 
-#endif //KEYBOARDKNOCKOUT_TAGDOC_H
+#endif //TAGDOC_H

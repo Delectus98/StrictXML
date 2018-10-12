@@ -2,8 +2,8 @@
 // Created by Maxime on 16/05/2018.
 //
 
-#ifndef KEYBOARDKNOCKOUT_XMLCOMPRESSOR_H
-#define KEYBOARDKNOCKOUT_XMLCOMPRESSOR_H
+#ifndef XMLCOMPRESSOR_H
+#define XMLCOMPRESSOR_H
 
 
 class XmlCompressor {
@@ -11,4 +11,4 @@ class XmlCompressor {
 };
 
 
-#endif //KEYBOARDKNOCKOUT_XMLCOMPRESSOR_H
+#endif //XMLCOMPRESSOR_H

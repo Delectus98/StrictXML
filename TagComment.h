@@ -2,8 +2,8 @@
 // Created by Maxime on 16/05/2018.
 //
 
-#ifndef KEYBOARDKNOCKOUT_XMLCOMMENT_H
-#define KEYBOARDKNOCKOUT_XMLCOMMENT_H
+#ifndef XMLCOMMENT_H
+#define XMLCOMMENT_H
 
 #include "Xml.h"
 #include "XmlException.h"
@@ -36,7 +36,7 @@ public:
     const std::string &getName() const override;
 
     bool isAttribute(const std::string& name) const override {
-        throw XmlException();
+        throw XmlWrongGetException(TYPE, "XmlText can't use 'isAttribute");
     }
 
     const std::string &getAttributeValueOrElse(const std::string &attr, const std::string &other) const override;
@@ -56,4 +56,4 @@ public:
 };
 
 
-#endif //KEYBOARDKNOCKOUT_XMLCOMMENT_H
+#endif //XMLCOMMENT_H

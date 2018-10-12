@@ -19,7 +19,7 @@ void TagRegular::setAttribute(const std::string &attr, const std::string &value)
 }
 
 void TagRegular::setText(const std::string &value) {
-    throw XmlWrongSetException();
+    throw XmlWrongSetException(TYPE, _name + " can't use 'setText");
 }
 
 void TagRegular::addXml(std::unique_ptr<Xml> xml) {
@@ -48,7 +48,7 @@ const std::string &TagRegular::getAttributeValueOrElse(const std::string &attr, 
 }
 
 const std::string &TagRegular::getText() const {
-    throw XmlWrongSetException();
+    throw XmlWrongGetException(TYPE, _name + " can't use 'getText");
 }
 
 size_t TagRegular::getXmlCount() const {
@@ -70,10 +70,11 @@ const XmlType &TagRegular::getType() const {
 }
 
 std::string TagRegular::toString(const std::string& indent) const {
-    std::string temp = indent + "<" + _name + "> ";
+    std::string temp = indent + "<" + _name;
     for (auto itr = _attributes.begin() ; itr != _attributes.end() ; ++itr) {
-        temp += itr->first + "=\"" + itr->second + "\" ";
+        temp +=  " " + itr->first + "=\"" + itr->second + "\"";
     }
+    temp += + ">";
     for (auto itr = _xmls.begin() ; itr != _xmls.end() ; ++itr) {
         temp += "\n" + itr.operator*()->toString(indent + indent);
     }

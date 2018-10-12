@@ -1,6 +1,6 @@
 
-#ifndef KEYBOARDKNOCKOUT_TAGSCRIPT_H
-#define KEYBOARDKNOCKOUT_TAGSCRIPT_H
+#ifndef TAGSCRIPT_H
+#define TAGSCRIPT_H
 
 #include "XmlException.h"
 #include "Xml.h"
@@ -32,7 +32,7 @@ public:
     const std::string &getName() const override;
 
     bool isAttribute(const std::string& name) const override {
-        throw XmlException();
+        throw XmlWrongGetException(TYPE, _name + " can't use 'isAttribute");
     }
 
     const std::string &getAttributeValueOrElse(const std::string &attr, const std::string &other) const override;
@@ -53,4 +53,4 @@ public:
 };
 
 
-#endif //KEYBOARDKNOCKOUT_TAGSCRIPT_H
+#endif //TAGSCRIPT_H

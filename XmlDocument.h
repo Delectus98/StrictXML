@@ -2,8 +2,8 @@
 // Created by Maxime on 16/05/2018.
 //
 
-#ifndef KEYBOARDKNOCKOUT_XMLDOCUMEN_H
-#define KEYBOARDKNOCKOUT_XMLDOCUMEN_H
+#ifndef XMLDOCUMENT_H
+#define XMLDOCUMENT_H
 
 #include <fstream>
 #include <memory>
@@ -18,21 +18,21 @@
 #include "TagDoc.h"
 #include "XmlText.h"
 
-#define _ATTRIBUT_XML_ '\"'
-#define _BACKSLASH_XML_ '\\'
-#define _SPACE_XML_ ' '
-#define _CHEVRON_OUVERT_XML_ '<'
-#define _CHEVRON_FERME_XML_ '>'
 
 class XmlDocument {
 private:
     static std::unique_ptr<Xml> createTag(const std::string &data);
 
     std::deque<std::unique_ptr<Xml>> _xmls;
+    std::string _msgError;
 public:
     //int loadFromMemory(const std::string& data) {}
 
     int loadFromFile(const std::string &filePath);
+
+    const std::string getError() const {
+        return _msgError;
+    }
 
     size_t getXmlCount() const {
         return _xmls.size();
@@ -54,10 +54,8 @@ public:
         }
     }
 
-    //void put<XmlTag>()
-
 };
 
 
 
-#endif //KEYBOARDKNOCKOUT_XMLDOCUMEN_H
+#endif //XMLDOCUMENT_H

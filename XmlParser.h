@@ -2,8 +2,8 @@
 // Created by Maxime on 16/05/2018.
 //
 
-#ifndef KEYBOARDKNOCKOUT_XMLPARSER_H
-#define KEYBOARDKNOCKOUT_XMLPARSER_H
+#ifndef XMLPARSER_H
+#define XMLPARSER_H
 
 #include <stack>
 #include "Xml.h"
@@ -65,7 +65,6 @@ public:
     bool backward();
 
     /**
-     * Depth first search
      * Parse every xml node in the tree from current xml node until the last one.
      * Place the current Xml node to the next node that have not been reached in order
      * When return false [the current xml is the master root] or [error when the parser has no xml]
@@ -74,7 +73,6 @@ public:
     bool forwardAll();
 
     /**
-     * Depth first search
      * Parse every xml node in the tree from current xml node until the first one.
      * Place the current Xml node to the previous node that have not been reached in order
      * When return false [the current xml is the master root] or [error when the parser has no xml]
@@ -84,4 +82,4 @@ public:
 
 };
 
-#endif //KEYBOARDKNOCKOUT_XMLPARSER_H
+#endif //XMLPARSER_H

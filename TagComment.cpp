@@ -7,15 +7,15 @@
 XmlType TagComment::TYPE = XmlType::XML_TAG_COMMENT;
 
 void TagComment::setName(const std::string &value) {
-    throw XmlWrongSetException();
+    throw XmlWrongSetException(TYPE, "XmlText can't use 'getText");
 }
 
 void TagComment::removeAttribute(const std::string &attr) {
-    throw XmlWrongSetException();
+    throw XmlWrongSetException(TYPE, "XmlText can't use 'removeAttribute");
 }
 
 void TagComment::setAttribute(const std::string &attr, const std::string &value) {
-    throw XmlWrongSetException();
+    throw XmlWrongSetException(TYPE, "XmlText can't use 'setAttribute");
 }
 
 void TagComment::setText(const std::string &value) {
@@ -23,23 +23,23 @@ void TagComment::setText(const std::string &value) {
 }
 
 void TagComment::addXml(std::unique_ptr<Xml> xml) {
-    throw XmlWrongSetException();
+    throw XmlWrongSetException(TYPE, "TagComment can't use 'addXml");
 }
 
 void TagComment::removeXml(size_t index) {
-    throw XmlWrongSetException();
+    throw XmlWrongSetException(TYPE, "TagComment can't use 'removeXml");
 }
 
 void TagComment::replaceXml(size_t index, std::unique_ptr<Xml> xml) {
-    throw XmlWrongSetException();
+    throw XmlWrongSetException(TYPE, "TagComment can't use 'replaceXml");
 }
 
 const std::string &TagComment::getName() const{
-    throw XmlWrongGetException();
+    throw XmlWrongGetException(TYPE, "TagComment can't use 'getName");
 }
 
 const std::string &TagComment::getAttributeValueOrElse(const std::string &attr, const std::string &other) const{
-    throw XmlWrongGetException();
+    throw XmlWrongGetException(TYPE, "TagComment can't use 'getAttributeValueOrElse");
 }
 
 const std::string &TagComment::getText() const{
@@ -47,15 +47,15 @@ const std::string &TagComment::getText() const{
 }
 
 size_t TagComment::getXmlCount() const{
-    throw XmlWrongGetException();
+    throw XmlWrongGetException(TYPE, "TagComment can't use 'getXmlCount");
 }
 
 const Xml *TagComment::getXml(size_t index) const {
-    throw XmlWrongGetException();
+    throw XmlWrongGetException(TYPE, "TagComment can't use 'getXml");
 }
 
 Xml *TagComment::getXml(size_t index) {
-    throw XmlWrongGetException();
+    throw XmlWrongGetException(TYPE, "TagComment can't use 'getXml");
 }
 
 const XmlType &TagComment::getType() const {
