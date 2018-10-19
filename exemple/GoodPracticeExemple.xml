@@ -13,9 +13,9 @@ correction: <test arg=""></test >
 
 <name arg="</tag>"></name> //ok
 
-<\<tag> </\<tag> //ok but depredicated (gives tagName = '<tag') 
-<></> //ok but depredicated (gives <></> and tagName = '')
-<tag \<="ok"> </tag> //ok but depredicated (gives tagArgument '<' = 'ok') 
+<\<tag> </\<tag> // depredicated (gives tagName = '<tag') 
+<></> //depredicated (gives <></> and tagName = '')
+<tag \<="ok"> </tag> //depredicated (gives tagArgument '<' = 'ok') 
 
 <tag>"</tag>"</tag> //ok
 <tag></tag></tag> //nok
