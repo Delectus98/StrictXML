@@ -1,0 +1,12 @@
+> opened tag then closing tag [case good] : ok
+> opened tag without closing tag [case false] : ok
+> closing tag without opened tag : ok
+> comment tag outside tag head : ok
+> doc tag : ok
+> script tag : ok
+> text input : ok
+> tag attributes (only for selfclosing and regular) : ok
+> quotes support tag attributes : ok
+> quotes support : ok
+> backslash support : partial (can not use '\\' )
+> xml parser : ok
