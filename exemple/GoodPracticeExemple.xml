@@ -31,3 +31,12 @@ exemple: <?php <tag /> ?> //nok
 exemple: <?php "<tag />" ?> //ok
 exemple: <??> //ok
 exemple: <? > //nok
+
+exemple: "\" //nok (gives "\)
+exemple: "\\" //ok (gives "\")
+exemple: "\"" //ok (gives """)
+
+exemple: https://github.com/ //ok
+exemple: https:< //nok attempt to open a tag
+exemple: https:\< //ok (gives https:<)
+ 
