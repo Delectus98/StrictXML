@@ -28,4 +28,6 @@ exemple: <!-- <tag /> --> //nok
 correction: <!-- "<tag />" --> //nok
 
 exemple: <?php <tag /> ?> //nok
-exemple: <?php "<tag />" ?> //nok
+exemple: <?php "<tag />" ?> //ok
+exemple: <??> //ok
+exemple: <? > //nok
