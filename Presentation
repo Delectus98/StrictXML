@@ -58,24 +58,40 @@ Principe d'Evolution:
       Par exemple on peut faire une action (ne pas bouger) qui coute 3 points d'actions pour se faire soigner pendant 
       ces trois points d'actions et ensuite aller a une zone si on a assez point d'actions ou autre.
      
-      On peut voir les autres actions (qui se déroule a un certain moment) de nos alliés et donc on ne peut pas aller 
-      dans une zone qui est déja occupé par un allié durant. Ainsi si le joueur 1 et le joueur 2 de la meme équipe souhaite aller
-      dans la zone A dans la meme période seul le premier joueur qui valide l'action pourra le faire. Sinon on joueur 1
-      peut emprunter une zone pendant un premiere période puis le joueur 2 emprunter cette meme zone pendant une autre période
-      distincte.
+      On peut voir les autres actions/le plan (qui vont se dérouler) de nos alliés et donc 
+      on ne peut pas aller dans une zone qui est déja occupé par un allié durant une période donnée. 
+      Ainsi si le joueur 1 et le joueur 2 de la meme équipe souhaite aller dans 
+      la zone A dans la meme période seul le premier joueur qui valide l'action pourra le faire. 
+      Sinon le joueur 1 peut emprunter une zone pendant un premiere période puis le joueur 2 emprunter cette meme zone
+      pendant une autre période distincte.
       
       
     Phase 2:
-      Les actions de la phase 1 sont normalement effectué sauf si :
-      * On recontre un obstacle (un élement perturbateur/menace), qui va faire changer notre plan, alors dans ce cas préci on peut faire des
-      actions réflexes. 
-      Ces actions réflexes consistent a choisir pendant le déroulement de la phase de nouvelles actions (dites reflexes)
+      Les actions de la phase 1 sont normalement effectué sauf si:
+      * On recontre un obstacle (un élement perturbateur/menace), qui va faire changer notre plan, alors dans 
+      ce cas préci on DOIT faire des actions réflexes. 
+      Ces actions réflexes consistent a choisir pendant le déroulement du plan de nouvelles actions (dites reflexes)
       pour contourner l'obstacles/l'élement perturbateur/menace.
+      Ces actions reflexes ne necessite pas forcement d'activer le mode réflexe.
       Par exemple si un joueur ennemi utilise votre zone vous pouvez actionner le mode réflexe.
+      * Ou qu'on utilise manuellement le mode reflexe
+      Attention on doit conserver assez de mode reflexe au cas ou car certaines actions réflexes ne peuvent pas être faites.
+      La mode reflexe doit être chargé et peut se recharger.
       
       Rappel mécanique phase 2:
       * Mode réflexe (pour les imprévus)
       * Mode spectateur/observateur
       
-      * Mode reflexe : Peut être utilisé brievement et seulement dans lorsque l'on est face a un obstacle/menace qui fait changer notre plan.
-      Ou qu'un ennemi/objet est proche de notre position.
+      * Mode reflexe : Peut être utilisé brievement et seulement dans lorsque l'on est face d'un obstacle/menace 
+      qui fait changer notre plan. Ou qu'un ennemi/objet est proche de notre position.
+      
+      
+    Unités:
+    
+    Ils existent différentes unités qui ont chacunes leurs capacités et leur mode réflexe.
+    * Soldat: Mode réflexe pendant une longue période, capacités de gestion du déroulement normales. Armes standard.
+    * Ingénieur: Mode réflexe pauvre, capacités de gestion du plan importantes. Technologies (tourelles au sol/mur, etc...)
+    //* Keenu Reeves: Mode réflexe ultime.
+    *  
+    
+    
