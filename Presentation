@@ -43,6 +43,7 @@ Principe d'Evolution:
     * Phase 2: Phase action (et potentiellement réflexe)
     
     Phase 1:
+      Controle:
       Le controle des unités se fait par:
       * le chemin que l'on veut pratiquer (on peut selectionner des points de visites que l'unité
       va parcourir en faisant un détour).
@@ -65,9 +66,13 @@ Principe d'Evolution:
       Sinon le joueur 1 peut emprunter une zone pendant un premiere période puis le joueur 2 emprunter cette meme zone
       pendant une autre période distincte.
       
+      Restrictions:
+      - Chacunes des unités on un type de combat et de stratégie.
+      - Un nombre de points d'actions par tour est défini.
+      - Un temps limite pour définir sa séquence
       
     Phase 2:
-      Les actions de la phase 1 sont normalement effectué sauf si:
+      Durant cette phase les actions de la phase 1 sont normalement effectué sauf si:
       * On recontre un obstacle (un élement perturbateur/menace), qui va faire changer notre plan, alors dans 
       ce cas préci on DOIT faire des actions réflexes. 
       Ces actions réflexes consistent a choisir pendant le déroulement du plan de nouvelles actions (dites reflexes)
@@ -78,12 +83,9 @@ Principe d'Evolution:
       Attention on doit conserver assez de mode reflexe au cas ou car certaines actions réflexes ne peuvent pas être faites.
       La mode reflexe doit être chargé et peut se recharger.
       
-      Rappel mécanique phase 2:
-      * Mode réflexe (pour les imprévus)
-      * Mode spectateur/observateur
-      
       * Mode reflexe : Peut être utilisé brievement et seulement dans lorsque l'on est face d'un obstacle/menace 
-      qui fait changer notre plan. Ou qu'un ennemi/objet est proche de notre position.
+      qui fait changer notre plan ou qu'un ennemi/objet est proche de notre position. Ainsi on peut faire une action
+      réflexe en rapport avec ce que l'on veut faire de l'environnement.
       
       
     Unités:
@@ -92,6 +94,8 @@ Principe d'Evolution:
     * Soldat: Mode réflexe pendant une longue période, capacités de gestion du déroulement normales. Armes standard.
     * Ingénieur: Mode réflexe pauvre, capacités de gestion du plan importantes. Technologies (tourelles au sol/mur, etc...)
     //* Keenu Reeves: Mode réflexe ultime.
-    *  
+    * Sergent-Chef: Mode gestion des unités (phase 1). (+ identique au Soldat)
+    * ....
     
     
+ 
