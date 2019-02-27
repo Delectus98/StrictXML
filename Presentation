@@ -9,7 +9,6 @@
     On controle une unité (soldat) ou plusieurs (en équipe/ou seul). A chaque tour les deux équipes (ou plus) doivent selectionner
     la zone ou ils doivent aller et la case ou ils veulent tirer (ou la direction), ils peuvent choisir l'ordre des actions
     et les types d'action mais perdre un tour. 
-    Certaines unités sont plus rapides et on le droit a plus d'actions lors d'un tour.
     Lorsque la séquence est terminée on peut voir la scène se dérouler et chaque joueur de chaque équipe bouger en même temps
     et pendant ce temps on ne peut rien faire (ou peut être des petites actions? -> actions réflexes?).
     
@@ -30,6 +29,7 @@
       -On vise vers l'endroit ou on va
       * les unités que l'on veut soigner
       -On vise un joueur (on doit être a coté et l'autre joueur ne doit pas bouger)
+      * on peut communiquer avec nos alliés pour leur conseiller des actions
       
       Chaque action coute un nombre de point d'action. 
       Par exemple on peut faire une action (ne pas bouger) qui coute 3 points d'actions pour se faire soigner pendant 
@@ -55,17 +55,18 @@
       pour contourner l'obstacles/l'élement perturbateur/menace.
       Ces actions reflexes ne necessite pas forcement d'activer le mode réflexe.
       Par exemple si un joueur ennemi utilise votre zone vous pouvez actionner le mode réflexe.
-      * Ou qu'on utilise manuellement le mode reflexe
-      Attention on doit conserver assez de mode reflexe au cas ou car certaines actions réflexes ne peuvent pas être faites.
-      La mode reflexe doit être chargé et peut se recharger.
+      Utiliser une action réflexes fait perdre des actions standards et lorsque 
+      
       
       * Mode reflexe : Peut être utilisé brievement et seulement dans lorsque l'on est face d'un obstacle/menace 
       qui fait changer notre plan ou qu'un ennemi/objet est proche de notre position. Ainsi on peut faire une action
       réflexe en rapport avec ce que l'on veut faire de l'environnement.
+      Attention on doit conserver assez de point d'action refexe pour activer le mode reflexe au cas où 
+      car certaines actions réflexes ne peuvent pas être faites. La mode reflexe doit être chargé et peut se recharger.
+     
       
       
     Unités:
-    
     Ils existent différentes unités qui ont chacunes leurs capacités et leur mode réflexe.
     * Soldat: Mode réflexe pendant une longue période, capacités de gestion du déroulement normales. Armes standard.
     * Ingénieur: Mode réflexe pauvre, capacités de gestion du plan importantes. Technologies (tourelles au sol/mur, etc...)
@@ -73,6 +74,14 @@
     * Sergent-Chef: Mode gestion des unités (phase 1). (+ identique au Soldat)
     * ....
     
+    
+    Actions:
+    Elles coutent un certains nombre de points d'actions/ou non.
+    Se déroule lors de la phase 2 et sont planifiés lors de la phase 1.
+    
+    Actions réflexes:
+    Elles coutent un certains nombre de points d'actions reflexes/ou non.
+    Se déroule lors de la phase 2 et sont planifiés en extremis lors de la phase 2.
     
  
 
