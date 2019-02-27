@@ -1,28 +1,4 @@
-JEU EVOLUTION ARME
-Description du jeu:
-  Jeu en multijoueur, ou l'on controle une manufacture d'arme. Le principe est de créer à la manière de la théorie de l'évolution 
-  de Darwin et de la génétique des armes toujours plus performantes.
-  
-Le jeu se décompose en deux grandes phases où l'on doit:
-  * Améliorer les armes et perturber les autres manufactures
-  * Vaincre les autres manufactures avec notre arme fabriquée dans la phase 1
 
-Mécaniques de gameplay:
-  * Espionnage industriel et sabotage industriel (Phase Gestion)
-  * Farming (Phase Gestion)
-  * Guerre (Phase Conflit)
-
-Armes et Evolution:
-  * Une arme est composé de plusieurs équipements.
-  * Chaque équipement possèdent des options (graphiques et de fonctionnalités)
-  * Ces options ont des répercutions sur les autres options (peut importe l'équipement)
-  * Ces répercutions sont modifiés par l'évolutions
-  * Un arme peut évoluer pour obtenir de nouvelle fonctionnalité (options) 
-
-Principe d'Evolution:
-  * L'évolution lors de la phase 1 se fait dans des arênes qui opposera des unités avec des armes dont la meilleur sera conservé et
-  les autres supprimées.
-  ---------------------------------------------------------
   JEU TACTIQUE
   
   Jeu action/réflexion ("tour par tour")
@@ -99,3 +75,65 @@ Principe d'Evolution:
     
     
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------
+JEU EVOLUTION ARME
+Description du jeu:
+  Jeu en multijoueur, ou l'on controle une manufacture d'arme. Le principe est de créer à la manière de la théorie de l'évolution 
+  de Darwin et de la génétique des armes toujours plus performantes.
+  
+Le jeu se décompose en deux grandes phases où l'on doit:
+  * Améliorer les armes et perturber les autres manufactures
+  * Vaincre les autres manufactures avec notre arme fabriquée dans la phase 1
+
+Mécaniques de gameplay:
+  * Espionnage industriel et sabotage industriel (Phase Gestion)
+  * Farming (Phase Gestion)
+  * Guerre (Phase Conflit)
+
+Armes et Evolution:
+  * Une arme est composé de plusieurs équipements.
+  * Chaque équipement possèdent des options (graphiques et de fonctionnalités)
+  * Ces options ont des répercutions sur les autres options (peut importe l'équipement)
+  * Ces répercutions sont modifiés par l'évolutions
+  * Un arme peut évoluer pour obtenir de nouvelle fonctionnalité (options) 
+
+Principe d'Evolution:
+  * L'évolution lors de la phase 1 se fait dans des arênes qui opposera des unités avec des armes dont la meilleur sera conservé et
+  les autres supprimées.
+  ---------------------------------------------------------
