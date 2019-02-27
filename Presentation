@@ -1,10 +1,11 @@
+JEU EVOLUTION ARME
 Description du jeu:
   Jeu en multijoueur, ou l'on controle une manufacture d'arme. Le principe est de créer à la manière de la théorie de l'évolution 
-  de Darwin des armes toujours plus performantes.
+  de Darwin et de la génétique des armes toujours plus performantes.
   
 Le jeu se décompose en deux grandes phases où l'on doit:
   * Améliorer les armes et perturber les autres manufactures
-  * Vaincre les autres manufactures avec nos armes
+  * Vaincre les autres manufactures avec notre arme fabriquée dans la phase 1
 
 Mécaniques de gameplay:
   * Espionnage industriel et sabotage industriel (Phase Gestion)
@@ -15,4 +16,62 @@ Armes et Evolution:
   * Une arme est composé de plusieurs équipements.
   * Chaque équipement possèdent des options (graphiques et de fonctionnalités)
   * Ces options ont des répercutions sur les autres options (peut importe l'équipement)
-  * Ces répercutions sont 
+  * Ces répercutions sont modifiés par l'évolutions
+  * Un arme peut évoluer pour obtenir de nouvelle fonctionnalité (options) 
+
+Principe d'Evolution:
+  * L'évolution lors de la phase 1 se fait dans des arênes qui opposera des unités avec des armes dont la meilleur sera conservé et
+  les autres supprimées.
+  ---------------------------------------------------------
+  JEU TACTIQUE
+  
+  Jeu action/réflexion ("tour par tour")
+  
+  Description du jeu:
+  
+    Jeu en multijoueur "tour par tour" (je réexplique ce que je veux dire par tour par tour plus tard) de type action/réfléxion/tactique.
+    On controle une unité (soldat) ou plusieurs (en équipe/ou seul). A chaque tour les deux équipes (ou plus) doivent selectionner
+    la zone ou ils doivent aller et la case ou ils veulent tirer (ou la direction), ils peuvent choisir l'ordre des actions
+    et les types d'action mais perdre un tour. 
+    Certaines unités sont plus rapides et on le droit a plus d'actions lors d'un tour.
+    Lorsque la séquence est terminée on peut voir la scène se dérouler et chaque joueur de chaque équipe bouger en même temps
+    et pendant ce temps on ne peut rien faire (ou peut être des petites actions? -> actions réflexes?).
+    
+  Gameplay:
+    * Controle d'unité(s) de combat
+    * Phase 1: Gestion des actions des troupes (mouvements, soins, attaques)
+    * Phase 2: Phase action (et potentiellement réflexe)
+    
+    Phase 1:
+      Le controle des unités se fait par:
+      * le chemin que l'on veut pratiquer (on peut selectionner des points de visites que l'unité
+      va parcourir en faisant un détour).
+      * les zones que l'on va attaquer.
+      Il existent plusieurs manières d'attaquer une zone:
+      -On vise toujours le même point
+      -On vise vers une direction qui ne change pas
+      -On vise vers l'endroit ou on va
+      * les unités que l'on veut soigner
+      -On vise un joueur (on doit être a coté et l'autre joueur ne doit pas bouger)
+      
+      Chaque action coute un nombre de point d'action. 
+      On peut faire une action (ne pas bouger) qui coute 3 points d'actions pour se faire soigner et ensuite aller a une zone
+      si on a assez point d'actions.
+     
+      On peut voir les autres actions (qui se déroule a un certain moment) de nos alliés et donc on ne peut pas aller 
+      dans une zone qui est déja occupé par un allié durant. Ainsi si le joueur 1 et le joueur 2 de la meme équipe souhaite aller
+      dans la zone A au meme moment seul le premier joueur qui valide l'action pourra le faire. 
+      
+      
+    Phase 2:
+      Les actions de la phase 1 sont normalement effectué sauf si :
+      * On recontre un obstacle (un élement perturbateur), qui va faire changer notre plan, alors dans ce cas préci on peut faire des
+      actions réflexes. 
+      Ces actions réflexes consistent a choisir pendant le déroulement de la phase de nouvelles actions (dites reflexes) pour utiliser
+      pour contourner l'obstacles/l'élement perturbateur.
+      Par exemple si un joueur ennemi utilise votre zone vous pouvez actionner le mode réflexe.
+      
+      Rappel mécanique phase 2:
+      * Mode réflexe (pour les imprévus)
+      * Mode spectateur/observateur
+      
