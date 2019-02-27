@@ -1,0 +1,18 @@
+Description du jeu:
+  Jeu en multijoueur, ou l'on controle une manufacture d'arme. Le principe est de créer à la manière de la théorie de l'évolution 
+  de Darwin des armes toujours plus performantes.
+  
+Le jeu se décompose en deux grandes phases où l'on doit:
+  * Améliorer les armes et perturber les autres manufactures
+  * Vaincre les autres manufactures avec nos armes
+
+Mécaniques de gameplay:
+  * Espionnage industriel et sabotage industriel
+  * Farming
+  * Hach N' Slash
+
+Armes et Evolution:
+  * Une arme est composé de plusieurs équipements.
+  * Chaque équipement possèdent des options (graphiques et de fonctionnalités)
+  * Ces options ont des répercutions sur les autres options (peut importe l'équipement)
+  *
