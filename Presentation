@@ -50,20 +50,20 @@
     Phase 2:
       Durant cette phase les actions de la phase 1 sont normalement effectué sauf si:
       * On recontre un obstacle (un élement perturbateur/menace), qui va faire changer notre plan, alors dans 
-      ce cas préci on DOIT faire des actions réflexes. 
+      ce cas préci on DOIT faire des Actions Réflexes. 
       Ces actions réflexes consistent a choisir pendant le déroulement du plan de nouvelles actions (dites reflexes)
       pour contourner l'obstacles/l'élement perturbateur/menace.
+      Lorsque l'on rencontre un obstacle on arrete la séquence prévue précédement et notre joueur reste en place.
       Ces actions reflexes ne necessite pas forcement d'activer le mode réflexe.
-      Par exemple si un joueur ennemi utilise votre zone vous pouvez actionner le mode réflexe.
-      Utiliser une action réflexes fait perdre des actions standards et lorsque 
+      Par exemple si un joueur ennemi utilise votre zone vous pouvez actionner le mode réflexe pour éviter de s'approcher.
+      Les actions réflexes utilisent les points d'action reflexe et d'action standard.
       
-      
-      * Mode reflexe : Peut être utilisé brievement et seulement dans lorsque l'on est face d'un obstacle/menace 
+      * Mode reflexe : Peut être utilisé brievement et seulement lorsque l'on est en face d'un obstacle/menace 
       qui fait changer notre plan ou qu'un ennemi/objet est proche de notre position. Ainsi on peut faire une action
-      réflexe en rapport avec ce que l'on veut faire de l'environnement.
+      réflexe en rapport avec notre environnement.
       Attention on doit conserver assez de point d'action refexe pour activer le mode reflexe au cas où 
       car certaines actions réflexes ne peuvent pas être faites. La mode reflexe doit être chargé et peut se recharger.
-     
+      Certaines actions réflexes perturbent la séquence et ne donc annule la séquence.
       
       
     Unités:
