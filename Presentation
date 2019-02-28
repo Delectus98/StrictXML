@@ -8,7 +8,7 @@
     Jeu en multijoueur "tour par tour" (je réexplique ce que je veux dire par tour par tour plus tard) de type action/réfléxion/tactique.
     On controle une unité (soldat) ou plusieurs (en équipe/ou seul). A chaque tour les deux équipes (ou plus) doivent selectionner
     la zone ou ils doivent aller et la case ou ils veulent tirer (ou la direction), ils peuvent choisir l'ordre des actions
-    et les types d'action mais perdre un tour. 
+    et les types d'action. 
     Lorsque la séquence est terminée on peut voir la scène se dérouler et chaque joueur de chaque équipe bouger en même temps
     et pendant ce temps on ne peut rien faire (ou peut être des petites actions? -> actions réflexes?).
     
